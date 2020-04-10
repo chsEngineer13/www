@@ -1,0 +1,69 @@
+AddDefaultCharset UTF-8
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ index.php?_url=/$1 [QSA,L]
+</IfModule>
+
+
+# Ограничения ресурсов
+#----------------------
+
+# Максимальное время в секундах, в течение которого 
+# скрипт должен полностью загрузиться.
+php_value max_execution_time 1200
+
+# Максимальное время в секундах, в течение которого скрипт должен разобрать 
+# все входные данные, переданные запросами вроде POST или GET.
+php_value max_input_time -1
+
+# Максимальный объем памяти, который разрешается использовать скрипту.
+php_value memory_limit "1280M"
+
+
+# Обработка данных
+#------------------
+
+# Максимально допустимый размер данных, отправляемых методом POST.
+php_value post_max_size "512M"
+
+# Кодировка по умолчанию.
+php_value default_charset "UTF-8"
+
+
+# Закачивание Файлов
+#--------------------
+
+# Разрешать или не разрешать закачивание файлов.
+#php_value file_uploads "On"
+
+# Временная директория, используемая для хранения файлов во время закачивания.
+#php_value upload_tmp_dir "c:/Server/www/http/engsurvey/temp/"
+php_value upload_tmp_dir "/var/www/html/engsurvey/temp/"
+
+# Максимальный размер закачиваемого файла.
+php_value upload_max_filesize "512M"
+
+# Максимально разрешенное количество одновременно закачиваемых файлов.
+php_value max_file_uploads 50
+
+
+# Динамические расширения
+#-------------------------
+
+#php_value extension "php_intl.dll"
+#php_value extension "php_mbstring.dll"
+#php_value extension "php_pdo_pgsql.dll"
+#php_value extension "php_pgsql.dll"
+
+
+# Дата
+#------
+
+# Временная зона, используемая по умолчанию всеми функциями даты/времени.
+#php_value date.timezone "Europe/Saratov"
+php_value date.timezone "Europe/Moscow"
+
+

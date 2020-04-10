@@ -1,0 +1,746 @@
+html,
+body {
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+} 
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* Структура шаблона
+------------------------------------------------------------------------------*/
+
+.page {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.page-header {
+    display: table-row;
+    width: 100%;
+    height: 50px;
+}
+
+.header {
+    display: table-cell;
+}
+
+.page-main {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.left-sidebar {
+    border-right: 1px solid #ddd;
+    display: table-cell;
+    height: 100%;
+    vertical-align: top;
+    width: 250px;
+}
+
+.left-sidebar .hidden {
+    width: 0;
+}
+
+.main {
+    display: table-cell;
+    padding-left: 15px;
+    padding-right: 15px;
+    vertical-align: top;
+}
+
+.right-sidebar {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.page-footer {
+    display: table-row;
+    width: 100%;
+    height: 50px;
+}
+
+.footer {
+    border-top: 1px solid #ddd;
+    display: table-cell;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    vertical-align: top;
+}
+
+
+
+/* Таблицы
+------------------------------------------------------------------------------*/
+.td-nowrap {
+    white-space: nowrap;
+}
+
+.td-align-left {
+    text-align: left;
+}
+
+.td-align-center {
+    text-align: center;
+}
+
+.td-align-right {
+    text-align: right;
+}
+
+.td-align-top {
+    vertical-align: top;
+}
+
+.td-align-middle {
+    vertical-align: middle;
+}
+
+.td-align-bottom {
+    vertical-align: bottom;
+}
+
+
+/* Блоки
+------------------------------------------------------------------------------*/
+
+.auth-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+    width: 400px;
+}
+
+/* buttons-block */
+.buttons-block {
+    display: block;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+
+/* objects-block */
+.objects-block {
+    display: table;
+    padding-bottom: 12px;
+    width: 100%;
+}
+
+.objects-block__item {
+    display: table-row;
+}
+
+.objects-block__item-label {
+    display: table-cell;
+    font-size: 16px;
+    font-weight: normal;
+    padding-bottom: 3px;
+    width: 120px;
+}
+
+.objects-block__item-name {
+    display: table-cell;
+    font-size: 16px;
+    font-weight: normal;
+    padding-bottom: 3px;
+    padding-left: 5px;
+}
+
+
+/* Боковая панель навигации
+------------------------------------------------------------------------------*/
+.sidebar-nav {
+    padding-top: 1px;
+}
+
+.sidebar-nav__list {
+    list-style-type: none;
+}
+
+.sidebar-nav__item {
+    background-color: #337ab7;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 1px;
+    position: relative;
+}
+
+.sidebar-nav__item:hover,
+.sidebar-nav__item:focus {
+    background-color: #286090;
+}
+
+.sidebar-nav__item_selected {
+    background-color: #286090;
+}
+
+.sidebar-nav__link {
+    color: #fff;
+    display: block;
+    padding: 12px 15px;
+    position: relative;
+}
+
+.sidebar-nav__link:hover,
+.sidebar-nav__link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar-nav__link_disabled {
+    color: #c0c0c0;
+    display: block;
+    padding: 12px 15px;
+    position: relative;
+}
+
+.sidebar-nav__link_disabled:hover,
+.sidebar-nav__link_disabled:focus {
+    color: #c0c0c0;
+    cursor: not-allowed;
+    text-decoration: none;
+}
+
+.sidebar-nav__parent-item {
+    background-color: #337ab7;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 1px;
+    position: relative;
+}
+
+.sidebar-nav__parent-item:hover,
+.sidebar-nav__parent-item:focus {
+    background-color: #286090;
+}
+
+.sidebar-nav__parent-item_selected,
+.sidebar-nav__parent-item_selected:hover,
+.sidebar-nav__parent-item_selected:focus {
+    background-color: #286090;
+}
+
+.sidebar-nav__parent-link {
+    color: #fff;
+    display: block;
+    padding: 12px 15px;
+    position: relative;
+}
+
+.sidebar-nav__parent-link:hover,
+.sidebar-nav__parent-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar-nav__parent-link_disabled {
+    color: #c0c0c0;
+    display: block;
+    padding: 12px 15px;
+    position: relative;
+}
+
+.sidebar-nav__parent-link_disabled:hover,
+.sidebar-nav__parent-link_disabled:focus {
+    color: #c0c0c0;
+    cursor: not-allowed;
+    text-decoration: none;
+}
+
+.sidebar-nav__sublist {
+    background-color: #fff;
+    border-bottom: 1px solid #337ab7;
+    border-left: 1px solid #337ab7;
+    border-right: 1px solid #337ab7;
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-nav__sublist_expanded {
+    display: block;
+}
+
+.sidebar-nav__subitem {
+    display: block;
+    position: relative;
+}
+
+.sidebar-nav__subitem:hover,
+.sidebar-nav__subitem:focus {
+    background-color: #f7f7f7;
+}
+
+.sidebar-nav__subitem_selected,
+.sidebar-nav__subitem_selected:hover,
+.sidebar-nav__subitem_selected:focus {
+    background-color: #e4e7ea;
+}
+
+.sidebar-nav__sublink {
+    color: #444;
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 6px 10px 6px 40px;
+    position: relative;
+    text-decoration: none;
+}
+
+.sidebar-nav__sublink:hover,
+.sidebar-nav__sublink:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+.sidebar-nav__sublink_disabled {
+    color: #777;
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 6px 10px 6px 40px;
+    position: relative;
+    text-decoration: none;
+}
+
+.sidebar-nav__sublink_disabled:hover,
+.sidebar-nav__sublink_disabled:focus {
+    color: #777;
+    cursor: not-allowed;
+    text-decoration: none;
+}
+
+.sidebar-nav__divider {
+    background-color: #e5e5e5;
+    height: 1px;
+    margin: 3px 0;
+    overflow: hidden;
+}
+
+.sidebar-nav__arrow {
+    float: right;
+}
+
+.sidebar-nav__arrow:before {
+    content: "\f107";
+}
+
+.sidebar-nav__arrow_expanded:before {
+    content: "\f106";
+}
+
+
+/*----------------------------------------------------------------------------*/
+/* Добавление и изменение стилей Bootstrap 3                                  */
+/*----------------------------------------------------------------------------*/
+
+/* Заголовок контента.
+--------------------------------------*/
+.content-header {
+    display: block;
+    padding: 15px 0 15px 0;
+}
+
+.content-title {
+    color: inherit;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.content-subtitle {
+    color: inherit;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* Навигационная панель
+--------------------------------------*/
+.navbar-gpp {
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.navbar-gpp .navbar-brand {
+    color: #fff;
+}
+
+.navbar-gpp .navbar-brand:hover,
+.navbar-gpp .navbar-brand:focus {
+    color: #fff;
+    background-color: transparent;
+}
+
+.navbar-gpp .btn-transparent {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-gpp .btn-transparent:hover {
+    color: #fff;
+    background-color: #286090;
+    border: 1px solid #2e6da4;
+}
+
+.navbar-gpp .navbar-text {
+  color: #fff;
+}
+
+.navbar-gpp .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-gpp .navbar-nav > li > a:hover,
+.navbar-gpp .navbar-nav > li > a:focus {
+    color: #fff;
+    background-color: transparent;
+}
+
+.navbar-gpp .navbar-nav > .active > a,
+.navbar-gpp .navbar-nav > .active > a:hover,
+.navbar-gpp .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: transparent;
+}
+
+.navbar-gpp .navbar-nav > .disabled > a,
+.navbar-gpp .navbar-nav > .disabled > a:hover,
+.navbar-gpp .navbar-nav > .disabled > a:focus {
+    color: #444;
+    background-color: transparent;
+}
+
+.navbar-gpp .navbar-nav > .open > a,
+.navbar-gpp .navbar-nav > .open > a:hover,
+.navbar-gpp .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #286090;
+}
+
+.navbar-gpp .dropdown {
+    border-color: transparent;
+}
+
+.navbar-gpp .dropdown:hover,
+.navbar-gpp .dropdown:focus {
+    background-color: #286090;
+}
+
+
+/* Навигационный маршрут
+--------------------------------------*/
+.breadcrumb {
+    margin: 0;
+}
+
+
+/* Форма-диалог
+--------------------------------------*/
+.form-dialog {
+    margin: 0;
+}
+
+.form-dialog-sm {
+    width: 300px;
+}
+
+.form-dialog-md {
+    width: 640px;
+}
+
+.form-dialog-lg {
+    width: 900px;
+}
+
+.form-dialog .radio,
+.form-dialog .checkbox,
+.form-dialog .radio-inline,
+.form-dialog .checkbox-inline {
+    padding-top: 7px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.form-dialog .radio,
+.form-dialog .checkbox {
+    min-height: 27px;
+}
+
+.form-dialog .control-label {
+    float: left;
+    font-weight: normal;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    text-align: right;
+    width: 180px;
+}
+
+.form-dialog .form-group:before,
+.form-dialog .form-group:after {
+    display: table;
+    content: " ";
+}
+
+.form-dialog .form-group:after  {
+    clear: both;
+}
+
+.form-dialog-body {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px 15px 5px 15px;
+}
+
+.form-dialog-footer {
+    padding: 10px 0;
+    text-align: right;
+}
+
+.form-dialog .help-block {
+    margin-bottom: 0;
+    margin-left: 180px;
+}
+
+.form-dialog .has-error .control-label {
+    color: inherit;
+}
+
+
+
+/* Размеры контролов формы
+--------------------------------------*/
+.form-control-xs {
+    width: 60px;
+}
+
+.form-control-sm {
+    width: 150px;
+}
+
+.form-control-md {
+    width: 240px;
+}
+
+.form-control-lg {
+    width: 360px;
+}
+
+.form-control-xl {
+    width: 420px;
+}
+
+.form-control-xxl {
+    width: 480px;
+}
+
+.form-control-xxxl {
+    width: 540px;
+}
+
+
+/* fieldset
+--------------------------------------*/
+legend {
+    font-size: 120%;
+}
+
+
+.datepicker__size_sm {
+    width: 150px;
+}
+
+
+/*----------------------------------------------------------------------------*/
+/* Добавление и изменение стилей DataTables */
+/*----------------------------------------------------------------------------*/
+table.dataTable  thead th {
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+}
+
+tr.group,
+tr.group:hover {
+    background-color: #dde8f0 !important;
+    color: #333;
+    font: bold 115% serif;
+}
+
+
+/*----------------------------------------------------------------------------*/
+/* Модальное окно подтверждения удаления */
+/*----------------------------------------------------------------------------*/
+.esr-delete-confirm-мodal__button {
+    width: 90px;
+}
+
+
+/*----------------------------------------------------------------------------*/
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    background: white;
+    cursor: inherit;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+}
+
+
+/*----------------------------------------------------------------------------*/
+/* Таблица */
+/*----------------------------------------------------------------------------*/
+/*.table {
+    
+}*/
+
+/*.table__caption {
+    
+}*/
+
+/*.table__header {
+    
+}*/
+
+/*.table__footer {
+    
+}*/
+
+/*.table__body {
+    
+}*/
+
+/*.table__row {
+    
+}*/
+
+/*.table__header-row {
+    
+}*/
+
+/*.table__body-row {
+    
+}*/
+
+/*.table__body-row-group {
+    
+}*/
+
+/*.table__footer-row {
+    
+}*/
+
+/*.table__cell {
+    
+}*/
+
+/*.table__header-cell {
+    
+}*/
+
+/*.table__body-cell {
+    
+}*/
+
+/*.table__footer-cell {
+    
+}*/
+
+
+/*============================================================================*/
+/* Классы Engsurvey
+/*============================================================================*/
+
+.es-input-file {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    cursor: inherit;
+}
+
+.es-error-message {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #a94442;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

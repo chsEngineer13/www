@@ -1,0 +1,1708 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Metromega - Responsive HTML5 Metro Template</title>
+
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- Scripts are at the bottom of the page -->
+
+        <style>
+            .span12 > p{
+                color:#d8dceb;
+            }
+            body{
+                background:#17181a; 
+                font-size:12px;
+                overflow-y:auto;
+				color: #f4f4f4;
+            }
+
+            pre{
+                background:none;
+            }
+            li a:hover{
+                text-decoration:underline;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <div id="totop" style="display:none;width:50px;height:50px;background:#fff;color:#000; line-height:50px;text-align:center;cursor:pointer; font-size:24px; font-weight:bold; position:fixed; bottom:0; right:0;">
+            ^
+        </div>
+
+        <div class="container" style='padding:20px;'>
+
+
+            <div class="row">
+                <div class="span12" style="text-align:center;">
+                    <img src="documentation/top.jpg" alt=""/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="span4">
+                    <h1>Details</h1>
+                    <p><strong>Author:</strong> Grozav <a href='http://grozav.com' target='_blank'>http://grozav.com</a></p>
+                    <p><strong>Email:</strong> <a href='mailto:alex@grozav.com'>alex@grozav.com</a></p>
+                    <p><strong>Template:</strong> Metromega</p>
+                    <p><strong>Created:</strong> 01 August 2013</p>
+                </div>
+                <div class='span8'>
+                    <h1>Table of Contents</h1>
+                    <ol id="table">
+                        <li><a href='#overview'>Overview</a></li>
+                        <li><a href='#htmlstructure'>HTML Structure</a></li>
+                        <li><a href='#cssfiles'>CSS Files</a></li>
+                        <li><a href='#javascript'>Javascript</a></li>
+                        <li><a href='#advanced'>Advanced</a>
+                            <ul style='margin-left:20px;'>
+                                <li><a href='#tilemarkup'>Tile Markup</a></li>
+                                <li><a href='#tilecolors'>Tile Colors</a></li>
+                                <li><a href='#tileanimations'>Icon &amp; Title Animations</a></li>
+                                <li><a href='#imagetiles'>Image Tiles</a></li>
+                                <li><a href='#imagetilesanimations'>Image Tiles Animations</a></li>
+                                <li><a href='#htmltiles'>HTML Content Tiles</a></li>
+                                <li><a href='#widgets'>Widgets</a></li>
+                                <li><a href='#tileshow'>Tileshow Exclusive Plugin</a></li>
+                                <li><a href='#gmapsintegration'>Google Maps Integration</a></li>
+                                <li><a href='#revealtiles'>Reveal Tiles</a></li>
+                                <li><a href='#mlightbox'>Metromega Lightbox</a></li>
+                                <li><a href='#blogposts'>Blog Posts</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='#contactform'>Contact Form</a></li>
+                        <li><a href='#sourcesandcredits'>Sources and Credits</a></li>
+                        <li><a href='#end'>End of Documentation</a></li>
+                    </ol>
+                </div>
+            </div>
+
+            <br/><br/>
+
+            <div class="row">
+                <div class="span12">
+                    <h1>Thank you for buying Metromega! You're awesome.</h1>
+                    <hr/>
+                    <p>Thank you so much for your purchase! Your purchase helps us a lot and makes the web just a little bit better.</p>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="row" id='overview'>
+                <div class="span12">
+                    <h1>Overview</h1>
+                    <hr/>
+                    <p>
+                        Metromega is a vertically responsive HTML5 &amp; CSS3 Template
+                        with horizontal scrolling. It is inspired by the Windows 8 Metro UI,
+                        offering an exclusive new user experience. Metromega has a custom made
+                        responsive framework, therefore it works and looks perfectly 
+                        in every browser and every device.
+                    </p>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="row">
+                <div class="span12">
+                    <h2>Revolutionary</h2>
+                    <p>
+                        When we created Metromega, our target was to make something revolutionary. For that reason, we created the Metromega Responsive Framework, a vertically responsive framework, created for the ultimate user experience.
+                    </p>
+                    <p>
+                        Users can simply jump in, without any coding experience. The framework provides everything you need, with perfectly semantic code blocks. Creating an amazing website has never been easier.
+                    </p>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="row">
+                <div class="span12">
+                    <h2>Responsive</h2>
+                    <p>
+                        Desktop, Laptop, Tablet and Phone. The best thing about the new concept of Vertically Responsive Websites is that your content will look amazing on any device, the tiles only get repositioned.
+                    </p>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="row">
+                <div class="span12">
+                    <h2>Retina Display Ready</h2>
+                    <p>
+                        We did say your content will look amazing on any device, didn’t we? We optimized the Template for Retina Displays so you’ll love staying on it from your Retina Display phone or tablet.
+                    </p>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="row">
+                <div class="span12">
+                    <h2>Exclusive Plugins</h2>
+                    <p>
+                        We wanted Metromega to be Complete. That’s why we created an exclusive slideshow plugin and an exclusive lightbox plugin.
+                    </p>
+                    <p>
+                        The slideshow plugin is called Tileshow, which can also handle background images and has an extremely simple markup.
+                    </p>
+                    <p>
+                        We called the Lightbox plugin mLightbox, because we simply love the name Metromega. Our lightbox can handle images, videos and our custom blog posts.
+                    </p>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="row">
+                <div class="span12">
+                    <h2>Made to be simple</h2>
+                    <p>
+                        Made for everyone, Metromega has extremely simple and intuitive markup. With a very complete documentation, it offers you the possibility to exploit all of Metromega’s features in no time. 
+                    </p>
+                </div>
+            </div>
+
+            <br/><br/>
+
+            <div class="row" id='htmlstructure'>
+                <div class="span12">
+                    <h1>HTML Structure</h1>
+                    <hr/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="span12">
+                    <p>
+                        Metromega's HTML markup is extremely intuitive and well commented. 
+                        We will review each and every element of the template in the Advanced section.
+                    </p>
+                    <p>
+                        The mLightbox markup is preset and only the mlist content should be modified. 
+                    </p>
+
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="row">
+                <div class="span12">
+                    <img src='documentation/classes.jpg' alt="" style='width:100%; height:auto;'/>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class='row'>
+                <div class='span12'>
+
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
+
+<span style="color: #cd2828; font-weight: bold">&lt;!doctype html&gt;</span>
+<span style="color: #6ab825; font-weight: bold">&lt;html</span> <span style="color: #bbbbbb">lang=</span><span style="color: #ed9d13">&quot;en&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;head&gt;</span>
+
+        <span style="color: #6ab825; font-weight: bold">&lt;meta</span> <span style="color: #bbbbbb">charset=</span><span style="color: #ed9d13">&quot;utf-8&quot;</span> <span style="color: #6ab825; font-weight: bold">/&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;title&gt;&lt;/title&gt;</span>
+        
+        <span style="color: #6ab825; font-weight: bold">&lt;meta</span> <span style="color: #bbbbbb">name=</span><span style="color: #ed9d13">&quot;viewport&quot;</span> <span style="color: #bbbbbb">content=</span><span style="color: #ed9d13">&quot;width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!--[if lt IE 9]&gt;&lt;script src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;</span>
+
+        <span style="color: #6ab825; font-weight: bold">&lt;link</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&#39;styles&#39;</span> <span style="color: #6ab825; font-weight: bold">/&gt;</span>
+
+    <span style="color: #6ab825; font-weight: bold">&lt;/head&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;body&gt;</span>
+
+        <span style="color: #999999; font-style: italic">&lt;!-- BACKGROUND --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;img</span> <span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;img/background.jpg&quot;</span> <span style="color: #bbbbbb">id=</span><span style="color: #ed9d13">&quot;background&quot;</span> <span style="color: #bbbbbb">alt=</span><span style="color: #ed9d13">&quot;&quot;</span> <span style="color: #6ab825; font-weight: bold">/&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- /BACKGROUND --&gt;</span>
+
+        <span style="color: #999999; font-style: italic">&lt;!-- LOGO --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;header&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;h1&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;img</span> <span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;img/logo.png&quot;</span> <span style="color: #bbbbbb">height=</span><span style="color: #ed9d13">&quot;27&quot;</span> <span style="color: #bbbbbb">width=</span><span style="color: #ed9d13">&quot;35&quot;</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;header-logo&quot;</span><span style="color: #6ab825; font-weight: bold">/&gt;</span> Metromega
+            <span style="color: #6ab825; font-weight: bold">&lt;/h1&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- /LOGO --&gt;</span>
+
+        <span style="color: #999999; font-style: italic">&lt;!-- MAIN CONTENT SECTION --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;section</span> <span style="color: #bbbbbb">id=</span><span style="color: #ed9d13">&quot;content&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+            <span style="color: #999999; font-style: italic">&lt;!-- SECTION --&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;section</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;clearfix section&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+                <span style="color: #999999; font-style: italic">&lt;!-- SECTION TITLE --&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;h3</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;block-title&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>Title<span style="color: #6ab825; font-weight: bold">&lt;/h3&gt;</span>
+                <span style="color: #999999; font-style: italic">&lt;!-- /SECTION TITLE --&gt;</span>
+
+                <span style="color: #999999; font-style: italic">&lt;!-- SECTION TILES --&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;tile wX hY [.color .title-animate .icon-animate]&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                    <span style="color: #6ab825; font-weight: bold">&lt;a</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;link&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;#&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                        <span style="color: #6ab825; font-weight: bold">&lt;i</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;icon-[..] icon-4x&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/i&gt;</span>
+                        <span style="color: #6ab825; font-weight: bold">&lt;p</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;title&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>Title<span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+                    <span style="color: #6ab825; font-weight: bold">&lt;/a&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+                <span style="color: #999999; font-style: italic">&lt;!-- /SECTION TILES --&gt;</span>
+
+            <span style="color: #6ab825; font-weight: bold">&lt;/section&gt;</span>
+            <span style="color: #999999; font-style: italic">&lt;!-- /SECTION --&gt;</span>
+
+        <span style="color: #6ab825; font-weight: bold">&lt;/section&gt;</span> 
+        <span style="color: #999999; font-style: italic">&lt;!-- /MAIN CONTENT SECTION --&gt;</span>
+
+        <span style="color: #999999; font-style: italic">&lt;!-- LOCKSCREEN --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;section</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mlightbox&quot;</span> <span style="color: #bbbbbb">id=</span><span style="color: #ed9d13">&quot;lockscreen&quot;</span> <span style="color: #bbbbbb">style=</span><span style="color: #ed9d13">&quot;background-image: url(&#39;img/lockscreen.jpg&#39;);&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">id=</span><span style="color: #ed9d13">&quot;lockscreen-content&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/section&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- /LOCKSCREEN --&gt;</span>
+
+        <span style="color: #999999; font-style: italic">&lt;!-- SIDEBAR --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">id=</span><span style="color: #ed9d13">&quot;opensidebar&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;i</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;icon-3x&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>+<span style="color: #6ab825; font-weight: bold">&lt;/i&gt;&lt;/div&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;section</span> <span style="color: #bbbbbb">id=</span><span style="color: #ed9d13">&quot;sidebar&quot;</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;htmltile&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;ul&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #bbbbbb">rel=</span><span style="color: #ed9d13">&quot;scrollto&quot;</span>  <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;#[..]&quot;</span> <span style="color: #6ab825; font-weight: bold">&gt;&lt;i</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;icon-[..] icon-3x&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;/ul&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/section&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- /SIDEBAR --&gt;</span>
+
+        <span style="color: #999999; font-style: italic">&lt;!-- PRELOADER --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;section</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mlightbox&quot;</span> <span style="color: #bbbbbb">id=</span><span style="color: #ed9d13">&quot;loader&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;a</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;#&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;img</span> <span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;img/preloader.gif&quot;</span> <span style="color: #6ab825; font-weight: bold">/&gt;&lt;/a&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/section&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- /PRELOADER --&gt;</span>
+
+        <span style="color: #999999; font-style: italic">&lt;!-- GALLERY LIGHTBOX --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;section</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mlightbox&quot;</span> <span style="color: #bbbbbb">id=</span><span style="color: #ed9d13">&quot;galleryimage&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/section&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- /GALLERY LIGHTBOX --&gt;</span>
+
+        <span style="color: #999999; font-style: italic">&lt;!-- VIDEO LIGHTBOX --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;section</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mlightbox&quot;</span> <span style="color: #bbbbbb">id=</span><span style="color: #ed9d13">&quot;galleryvideo&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/section&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- /VIDEO LIGHTBOX --&gt;</span>
+
+        <span style="color: #999999; font-style: italic">&lt;!-- BLOG LIGHTBOX --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;section</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mlightbox&quot;</span> <span style="color: #bbbbbb">id=</span><span style="color: #ed9d13">&quot;blogpost&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>z
+        <span style="color: #6ab825; font-weight: bold">&lt;/section&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- /BLOG LIGHTBOX --&gt;</span>
+
+        
+        <span style="color: #999999; font-style: italic">&lt;!-- SCRIPTS  --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script&gt;&lt;/script&gt;</span> 
+        <span style="color: #999999; font-style: italic">&lt;!-- /SCRIPTS  --&gt;</span>
+
+    <span style="color: #6ab825; font-weight: bold">&lt;/body&gt;</span>
+<span style="color: #6ab825; font-weight: bold">&lt;/html&gt;</span>
+                        </pre></div>
+
+
+                </div>
+            </div>
+
+            <br/><br/>
+
+            <div class="row" id='cssfiles'>
+                <div class="span12">
+                    <h1>CSS Files</h1>
+                    <hr/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="span12">
+                
+                	<h1><span class="label label-success">NEW! To make Metromega vertical add class="vertical" to your &lt;body&gt; tag.</span></p>
+                    <h1>
+                        For simplicity, we have a single stylesheet which includes
+                        the other ones needed.
+                    </p>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="row">
+                <div class="span12">
+
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #6ab825; font-weight: bold">&lt;link</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&#39;http://fonts.googleapis.com/css?family=Open+Sans:300,600&#39;</span> <span style="color: #bbbbbb">rel=</span><span style="color: #ed9d13">&#39;stylesheet&#39;</span> <span style="color: #bbbbbb">type=</span><span style="color: #ed9d13">&#39;text/css&#39;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+    <span style="color: #6ab825; font-weight: bold">&lt;link</span> <span style="color: #bbbbbb">rel=</span><span style="color: #ed9d13">&quot;stylesheet&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;css/style.css&quot;</span> <span style="color: #6ab825; font-weight: bold">/&gt;</span>
+                        </pre></div>
+
+
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="row">
+                <div class="span12">
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">  <span style="color: #999999; font-style: italic">/*==== Imports ====*/</span>
+
+    <span style="color: #6ab825; font-weight: bold">@import</span> <span style="color: #6ab825; font-weight: bold">url</span><span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;normalize.css&quot;</span><span style="color: #d0d0d0">);</span>
+    <span style="color: #6ab825; font-weight: bold">@import</span> <span style="color: #6ab825; font-weight: bold">url</span><span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;metro-bootstrap.css&quot;</span><span style="color: #d0d0d0">);</span>
+    <span style="color: #6ab825; font-weight: bold">@import</span> <span style="color: #6ab825; font-weight: bold">url</span><span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;font-awesome.min.css&quot;</span><span style="color: #d0d0d0">);</span>
+    <span style="color: #6ab825; font-weight: bold">@import</span> <span style="color: #6ab825; font-weight: bold">url</span><span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;font-awesome-ie7.min.css&quot;</span><span style="color: #d0d0d0">);</span>
+                        </pre></div>
+
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="row">
+                <div class="span12">
+
+                    If you want to change anything in the CSS Design of Metromega, it's fairly simple.
+
+                    Every element of the page in the CSS file has it's own header:
+                    <br/><br/>
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">  <span style="color: #999999; font-style: italic">/*==== Title ====*/</span>
+                        </pre></div>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="row">
+                <div class="span12">
+<!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/*==== Table of Contents ====*/</span>
+<span style="color: #999999; font-style: italic">/*</span>
+<span style="color: #999999; font-style: italic">    1. Imports </span>
+<span style="color: #999999; font-style: italic">    2. Metromega</span>
+<span style="color: #999999; font-style: italic">        2.1. Base Styles</span>
+<span style="color: #999999; font-style: italic">        2.2. Typography</span>
+<span style="color: #999999; font-style: italic">        2.3. Fullscreen Background</span>
+<span style="color: #999999; font-style: italic">        2.4. Container</span>
+<span style="color: #999999; font-style: italic">        2.5. Header / Logo</span>
+<span style="color: #999999; font-style: italic">        2.6. Section</span>
+<span style="color: #999999; font-style: italic">        2.7. Section Responsive</span>
+<span style="color: #999999; font-style: italic">        2.8. Tile Default</span>
+<span style="color: #999999; font-style: italic">        2.9. Image Tile</span>
+<span style="color: #999999; font-style: italic">        2.10. Tile Content</span>
+<span style="color: #999999; font-style: italic">        2.11.Tile Height</span>
+<span style="color: #999999; font-style: italic">        2.12.Tile Width</span>
+<span style="color: #999999; font-style: italic">        2.13.Tile Responsive</span>
+<span style="color: #999999; font-style: italic">        2.14.Tile Link</span>
+<span style="color: #999999; font-style: italic">        2.15.Tile Icon</span>
+<span style="color: #999999; font-style: italic">        2.16.Tile Title</span>
+<span style="color: #999999; font-style: italic">        2.17.Tile Caption</span>
+<span style="color: #999999; font-style: italic">        2.18.Video Tiles</span>
+<span style="color: #999999; font-style: italic">        2.19.Reveal Tiles</span>
+<span style="color: #999999; font-style: italic">        2.20.Tile Colors</span>
+<span style="color: #999999; font-style: italic">        2.21.Text Tiles</span>
+<span style="color: #999999; font-style: italic">        2.22.Gmaps</span>
+<span style="color: #999999; font-style: italic">        2.23.Titile Animation</span>
+<span style="color: #999999; font-style: italic">        2.24.Icon Animation</span>
+<span style="color: #999999; font-style: italic">        2.25.Transparent Hover Effect</span>
+<span style="color: #999999; font-style: italic">        2.26.Image Animation</span>
+<span style="color: #999999; font-style: italic">        2.27.Tileshow</span>
+<span style="color: #999999; font-style: italic">    3. Isotope</span>
+<span style="color: #999999; font-style: italic">    4. Metromega Features</span>
+<span style="color: #999999; font-style: italic">        4.1. Metromega Lockscreen</span>
+<span style="color: #999999; font-style: italic">        4.2. Metromega Sidebar</span>
+<span style="color: #999999; font-style: italic">        4.3. Metromega Preloader</span>
+<span style="color: #999999; font-style: italic">        4.4. Metromega Lightbox</span>
+<span style="color: #999999; font-style: italic">        4.5. mList</span>
+<span style="color: #999999; font-style: italic">        4.6. Blog Posts</span>
+<span style="color: #999999; font-style: italic">    5. Malihu Scrollbar</span>
+<span style="color: #999999; font-style: italic">*/</span>
+</pre></div>
+
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="row">
+                <div class="span12">
+                    The base CSS contains Tiles Settings such as size, position, colors, animations.
+                    <br/>
+                    Here are some useful How To's:
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="row">
+                <div class="span12">
+                    Define Custom Tile Color:
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #447fcf; text-decoration: underline">.mynewcolor</span><span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">background</span><span style="color: #d0d0d0">:</span> <span style="color: #3677a9">#BBBBBB</span><span style="color: #d0d0d0">;</span> <span style="color: #999999; font-style: italic">/* Old browsers */</span>
+        <span style="color: #6ab825; font-weight: bold">background</span><span style="color: #d0d0d0">:</span> <span style="color: #d0d0d0">-moz-linear-gradient(</span><span style="color: #6ab825; font-weight: bold">left</span><span style="color: #d0d0d0">,</span> <span style="color: #3677a9">#AAAAAA</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">%,</span> <span style="color: #3677a9">#BBBBBB</span> <span style="color: #3677a9">100</span><span style="color: #d0d0d0">%);</span> <span style="color: #999999; font-style: italic">/* FF3.6+ */</span>
+        <span style="color: #6ab825; font-weight: bold">background</span><span style="color: #d0d0d0">:</span> <span style="color: #d0d0d0">-webkit-gradient(linear,</span> <span style="color: #6ab825; font-weight: bold">left</span> <span style="color: #6ab825; font-weight: bold">top</span><span style="color: #d0d0d0">,</span> <span style="color: #6ab825; font-weight: bold">right</span> <span style="color: #6ab825; font-weight: bold">top</span><span style="color: #d0d0d0">,</span> <span style="color: #6ab825; font-weight: bold">color</span><span style="color: #d0d0d0">-stop(</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">%,</span><span style="color: #3677a9">#AAAAAA</span><span style="color: #d0d0d0">),</span> <span style="color: #6ab825; font-weight: bold">color</span><span style="color: #d0d0d0">-stop(</span><span style="color: #3677a9">100</span><span style="color: #d0d0d0">%,</span><span style="color: #3677a9">#BBBBBB</span><span style="color: #d0d0d0">));</span> <span style="color: #999999; font-style: italic">/* Chrome,Safari4+ */</span>
+        <span style="color: #6ab825; font-weight: bold">background</span><span style="color: #d0d0d0">:</span> <span style="color: #d0d0d0">-webkit-linear-gradient(</span><span style="color: #6ab825; font-weight: bold">left</span><span style="color: #d0d0d0">,</span> <span style="color: #3677a9">#AAAAAA</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">%,</span><span style="color: #3677a9">#BBBBBB</span> <span style="color: #3677a9">100</span><span style="color: #d0d0d0">%);</span> <span style="color: #999999; font-style: italic">/* Chrome10+,Safari5.1+ */</span>
+        <span style="color: #6ab825; font-weight: bold">background</span><span style="color: #d0d0d0">:</span> <span style="color: #d0d0d0">-o-linear-gradient(</span><span style="color: #6ab825; font-weight: bold">left</span><span style="color: #d0d0d0">,</span> <span style="color: #3677a9">#AAAAAA</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">%,</span><span style="color: #3677a9">#BBBBBB</span> <span style="color: #3677a9">100</span><span style="color: #d0d0d0">%);</span> <span style="color: #999999; font-style: italic">/* Opera 11.10+ */</span>
+        <span style="color: #6ab825; font-weight: bold">background</span><span style="color: #d0d0d0">:</span> <span style="color: #d0d0d0">-ms-linear-gradient(</span><span style="color: #6ab825; font-weight: bold">left</span><span style="color: #d0d0d0">,</span> <span style="color: #3677a9">#AAAAAA</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">%,</span><span style="color: #3677a9">#BBBBBB</span> <span style="color: #3677a9">100</span><span style="color: #d0d0d0">%);</span> <span style="color: #999999; font-style: italic">/* IE10+ */</span>
+        <span style="color: #6ab825; font-weight: bold">background</span><span style="color: #d0d0d0">:</span> <span style="color: #d0d0d0">linear-gradient(to</span> <span style="color: #6ab825; font-weight: bold">right</span><span style="color: #d0d0d0">,</span> <span style="color: #3677a9">#AAAAAA</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">%,</span><span style="color: #3677a9">#BBBBBB</span> <span style="color: #3677a9">100</span><span style="color: #d0d0d0">%);</span> <span style="color: #999999; font-style: italic">/* W3C */</span>
+        <span style="color: #d0d0d0">filter:</span> <span style="color: #d0d0d0">progid:DXImageTransform.Microsoft.gradient(</span> <span style="color: #d0d0d0">startColorstr=</span><span style="color: #ed9d13">&#39;#AAAAAA&#39;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">endColorstr=</span><span style="color: #ed9d13">&#39;#BBBBBB&#39;</span><span style="color: #d0d0d0">,GradientType=</span><span style="color: #3677a9">1</span> <span style="color: #d0d0d0">);</span> <span style="color: #999999; font-style: italic">/* IE6-9 */</span>
+
+        <span style="color: #d0d0d0">-webkit-box-shadow:</span> <span style="color: #6ab825; font-weight: bold">inset</span> <span style="color: #3677a9">0px</span> <span style="color: #3677a9">0px</span> <span style="color: #3677a9">1px</span> <span style="color: #3677a9">1px</span> <span style="color: #3677a9">#BBBBBB</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">box-shadow:</span> <span style="color: #6ab825; font-weight: bold">inset</span> <span style="color: #3677a9">0px</span> <span style="color: #3677a9">0px</span> <span style="color: #3677a9">1px</span> <span style="color: #3677a9">1px</span> <span style="color: #3677a9">#BBBBBB</span><span style="color: #d0d0d0">;</span>   
+    <span style="color: #d0d0d0">}</span>
+    <span style="color: #447fcf; text-decoration: underline">.mynewcolor</span><span style="color: #ffa500">:hover</span> <span style="color: #6ab825; font-weight: bold">a</span><span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">background</span><span style="color: #d0d0d0">:</span> <span style="color: #3677a9">#BBBBBB</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #d0d0d0">}</span>
+    <span style="color: #447fcf; text-decoration: underline">.mynewcolor</span><span style="color: #ffa500">:active</span> <span style="color: #6ab825; font-weight: bold">a</span><span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">background</span><span style="color: #d0d0d0">:</span> <span style="color: #3677a9">#CCCC</span><span style="color: #d0d0d0">;</span> <span style="color: #999999; font-style: italic">/* On Click Color */</span>
+    <span style="color: #d0d0d0">}</span>
+                        </pre></div>
+
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="row">
+                <div class="span12">
+                    Define Custom Title Animation:
+<!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #447fcf; text-decoration: underline">.title-mycustomanimation</span><span style="color: #ffa500">:hover</span> <span style="color: #447fcf; text-decoration: underline">.title</span><span style="color: #d0d0d0">{</span>
+    <span style="color: #6ab825; font-weight: bold">margin-left</span><span style="color: #d0d0d0">:</span><span style="color: #3677a9">0px</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #6ab825; font-weight: bold">margin-top</span><span style="color: #d0d0d0">:</span><span style="color: #3677a9">0px</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #d0d0d0">-webkit-transform:</span> <span style="color: #d0d0d0">scale(</span><span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">rotate(</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">deg);</span> 
+    <span style="color: #d0d0d0">-moz-transform:</span> <span style="color: #d0d0d0">scale(</span><span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">rotate(</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">deg);</span> 
+    <span style="color: #d0d0d0">-ms-transform:</span> <span style="color: #d0d0d0">scale(</span><span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">rotate(</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">deg);</span> 
+    <span style="color: #d0d0d0">-o-transform:</span> <span style="color: #d0d0d0">scale(</span><span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">rotate(</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">deg);</span> 
+    <span style="color: #d0d0d0">transform:</span> <span style="color: #d0d0d0">scale(</span><span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">rotate(</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">deg);</span> 
+    <span style="color: #d0d0d0">-ms-filter:</span> <span style="color: #ed9d13">&quot;progid:DXImageTransform.Microsoft.Alpha(Opacity=100)&quot;</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #d0d0d0">filter:</span> <span style="color: #d0d0d0">alpha(</span><span style="color: #6ab825; font-weight: bold">opacity</span><span style="color: #d0d0d0">=</span><span style="color: #3677a9">100</span><span style="color: #d0d0d0">);</span>
+    <span style="color: #d0d0d0">-moz-</span><span style="color: #6ab825; font-weight: bold">opacity</span><span style="color: #d0d0d0">:</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #d0d0d0">-khtml-</span><span style="color: #6ab825; font-weight: bold">opacity</span><span style="color: #d0d0d0">:</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #6ab825; font-weight: bold">opacity</span><span style="color: #d0d0d0">:</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;</span>
+<span style="color: #d0d0d0">}</span>
+</pre></div>
+
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="row">
+                <div class="span12">
+                    Define Custom Icon Animation
+<!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #447fcf; text-decoration: underline">.icon-mycustomanimation</span><span style="color: #ffa500">:hover</span> <span style="color: #447fcf; text-decoration: underline"> i</span><span style="color: #d0d0d0">{</span>
+    <span style="color: #6ab825; font-weight: bold">margin-left</span><span style="color: #d0d0d0">:</span><span style="color: #3677a9">0px</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #6ab825; font-weight: bold">margin-top</span><span style="color: #d0d0d0">:</span><span style="color: #3677a9">0px</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #d0d0d0">-webkit-transform:</span> <span style="color: #d0d0d0">scale(</span><span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">rotate(</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">deg);</span> 
+    <span style="color: #d0d0d0">-moz-transform:</span> <span style="color: #d0d0d0">scale(</span><span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">rotate(</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">deg);</span> 
+    <span style="color: #d0d0d0">-ms-transform:</span> <span style="color: #d0d0d0">scale(</span><span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">rotate(</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">deg);</span> 
+    <span style="color: #d0d0d0">-o-transform:</span> <span style="color: #d0d0d0">scale(</span><span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">rotate(</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">deg);</span> 
+    <span style="color: #d0d0d0">transform:</span> <span style="color: #d0d0d0">scale(</span><span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">rotate(</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">deg);</span> 
+    <span style="color: #d0d0d0">-ms-filter:</span> <span style="color: #ed9d13">&quot;progid:DXImageTransform.Microsoft.Alpha(Opacity=100)&quot;</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #d0d0d0">filter:</span> <span style="color: #d0d0d0">alpha(</span><span style="color: #6ab825; font-weight: bold">opacity</span><span style="color: #d0d0d0">=</span><span style="color: #3677a9">100</span><span style="color: #d0d0d0">);</span>
+    <span style="color: #d0d0d0">-moz-</span><span style="color: #6ab825; font-weight: bold">opacity</span><span style="color: #d0d0d0">:</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #d0d0d0">-khtml-</span><span style="color: #6ab825; font-weight: bold">opacity</span><span style="color: #d0d0d0">:</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #6ab825; font-weight: bold">opacity</span><span style="color: #d0d0d0">:</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;</span>
+<span style="color: #d0d0d0">}</span>
+</pre></div>
+
+                </div>
+            </div>
+
+            <br/><br/>
+
+            <div class="row" id='javascript'>
+                <div class="span12">
+                    <h1>Javascript</h1>
+                    <hr/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="span12">
+                    <p>
+                        For convenience, all the required and optional javascript files are located at the end of the page.
+                        <br/>
+                        Each script has a comment describing what it is, though we recommend leaving them default
+                        unless you know what you're doing.
+                    </p>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="row">
+                <div class="span12">
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/jquery-1.7.1.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span> <span style="color: #999999; font-style: italic">&lt;!-- jQuery Library --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/respond.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span> <span style="color: #999999; font-style: italic">&lt;!-- Responsive Library --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/jquery.isotope.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span> <span style="color: #999999; font-style: italic">&lt;!-- Isotope Layout Plugin --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/jquery.mousewheel.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span> <span style="color: #999999; font-style: italic">&lt;!-- jQuery Mousewheel --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/jquery.mCustomScrollbar.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span> <span style="color: #999999; font-style: italic">&lt;!-- malihu Scrollbar --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/tileshow.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span> <span style="color: #999999; font-style: italic">&lt;!-- Metromega Custom Tileshow Plugin --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/mlightbox.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span> <span style="color: #999999; font-style: italic">&lt;!-- Metromega Custom Lightbox Plugin --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/jquery.fitVids.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span> <span style="color: #999999; font-style: italic">&lt;!-- jQuery fitVids Plugin --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/lockscreen.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span> <span style="color: #999999; font-style: italic">&lt;!-- Metromega Lockscreen --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/bootstrap.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span> <span style="color: #999999; font-style: italic">&lt;!-- Bootstrap Library --&gt;</span>
+
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/script.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span> <span style="color: #999999; font-style: italic">&lt;!-- Metromega Script --&gt;</span>
+                        </pre></div>
+
+                </div>
+            </div>
+
+            <br/><br/>
+
+            <div class="row" id='advanced'>
+                <div class="span12">
+                    <h1>Advanced</h1>
+                    <hr/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="span12">
+                    <p>
+                        Here we will be covering all the tile markups, plugin markups and uses. 
+                        This is where you learn the Metromega Concept.
+                    </p>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="row" id='tilemarkup'>
+                <div class="span12">
+                    <h2>Tile Markup</h2>
+                    <p>
+                        The tile markup is fairly simple. We will be covering the awesome possibilities you have in this section.
+                        <br/><br/>
+                        <span class='label label-important'>[ markup ] denotes something optional which can be replaced with something of that prototype. 
+                            The square brackets are not used inside the code.</span>
+                    </p>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class='row'>
+                <div class='span12'>
+                    <div class="tile turquoise w2 h1 title-horizontalcenter icon-scaleuprotate360cw">
+                        <a class="link" href="#">
+                            <i class="icon-tasks icon-4x"></i>
+                            <p class="title">Title</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class='row'>
+                <div class='span6'>
+                    Prototype:
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;tile wX hY [color title-animation icon-animation]&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;a</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;link&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;#&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;i</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;icon-[..] icon-4x&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/i&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;p</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;title&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>Title<span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+                        </pre></div>
+
+                </div>
+                <div class='span6'>
+                    Example:
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;tile turquoise w2 h1 title-horizontalcenter icon-scaleuprotate360cw&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;a</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;link&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;#&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;i</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;icon-tasks icon-4x&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/i&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;p</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;title&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>Title<span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+                        </pre></div>
+
+                </div>
+
+
+            </div>
+
+            <br/>
+            <div class='row'>
+                <div class='span12'>
+                    <div class="tile w2 h1 red">
+                        <a class="link" href="#">
+                            <div class="text">
+                                <p class="text-medium">
+                                    Heading
+                                </p>
+                                <p>
+                                    Description
+                                </p>
+                            </div>
+                            <p class="sub">1</p>
+                            <p class="title-right text-large">31</p>
+                            <p class="title">Title</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='span6'>
+                    Prototype:
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">  <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;tile wX hY [color title-animation icon-animation customtile]&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;a</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;link&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;#&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;text&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;p</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;text-medium&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                    Heading
+                <span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;p&gt;</span>
+                    Description
+                <span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;p</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;sub&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>1<span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;p</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;title-right text-large&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>31<span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;p</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;title&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>Title<span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+                        </pre></div>
+
+                </div>
+                <div class='span6'>
+                    Example:
+
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;tile w2 h1 red&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;a</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;link&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;#&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;text&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;p</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;text-medium&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                    Heading
+                <span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;p&gt;</span>
+                    Description
+                <span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;p</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;sub&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>1<span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;p</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;title-right text-large&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>31<span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;p</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;title&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>Title<span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+
+                        </pre></div>
+
+
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="row">
+                <div class="span6">
+                    <p>
+                        Tile sizes are marked up with the classes wX hY, <strong>where:</strong>
+                    </p>
+                    <ul>
+                        <li>w - width</li>
+                        <li>h - height</li>
+                        <li>X, Y - size: s, 1, 2, 3, 4</li>
+                    </ul>
+                    <p class='muted'>Example: w2 h1</p>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class='row' id='tilecolors'>
+                <div class='span12'>
+                    <h2>Tile Colors</h2>
+                    <ul>
+                        <li>default (no color class)</li>
+                        <li>turquoise</li>
+                        <li>red</li>
+                        <li>orange</li>
+                        <li>yellow</li>
+                        <li>green</li>
+                        <li>blue</li>
+                        <li>purple</li>
+                        <li>brown</li>
+                        <li>white</li>
+                        <li>gray</li>
+                        <li>black</li>
+                        <li>transparent</li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="row">
+                <div class="span12">
+                    <div>
+                        <div class="tile w1 h1">
+                            <a class="link" href="#">
+                                <i class="icon-windows icon-2x"></i>
+                                <p class="title">Default Tile</p>
+                            </a>
+                        </div>
+                        <div class="tile turquoise w1 h1">
+                            <a class="link" href="#">
+                                <i class="icon-windows icon-2x"></i>
+                                <p class="title">.turquoise</p>
+                            </a>
+                        </div>
+                        <div class="tile yellow w1 h1">
+                            <a class="link" href="#">
+                                <i class="icon-windows icon-2x"></i>
+                                <p class="title">.yellow</p>
+                            </a>
+                        </div>
+                        <div class="tile green w1 h1">
+                            <a class="link" href="#">
+                                <i class="icon-windows icon-2x"></i>
+                                <p class="title">.green</p>
+                            </a>
+                        </div>
+                        <div class="tile blue w1 h1">
+                            <a class="link" href="#">
+                                <i class="icon-windows icon-2x"></i>
+                                <p class="title">.blue</p>
+                            </a>
+                        </div>
+                        <div class="tile purple w1 h1">
+                            <a class="link" href="#">
+                                <i class="icon-windows icon-2x"></i>
+                                <p class="title">.purple</p>
+                            </a>
+                        </div>
+                        <div class="tile red w1 h1">
+                            <a class="link" href="#">
+                                <i class="icon-windows icon-2x"></i>
+                                <p class="title">.red</p>
+                            </a>
+                        </div>
+                        <div class="tile orange w1 h1">
+                            <a class="link" href="#">
+                                <i class="icon-windows icon-2x"></i>
+                                <p class="title">.orange</p>
+                            </a>
+                        </div>
+                        <div class="tile brown w1 h1">
+                            <a class="link" href="#">
+                                <i class="icon-windows icon-2x"></i>
+                                <p class="title">.brown</p>
+                            </a>
+                        </div>
+                        <div class="tile gray w1 h1">
+                            <a class="link" href="#">
+                                <i class="icon-windows icon-2x"></i>
+                                <p class="title">.gray</p>
+                            </a>
+                        </div>
+                        <div class="tile white w1 h1">
+                            <a class="link" href="#">
+                                <i class="icon-windows icon-2x"></i>
+                                <p class="title">.white</p>
+                            </a>
+                        </div>
+                        <div class="tile black w1 h1">
+                            <a class="link" href="#">
+                                <i class="icon-windows icon-2x"></i>
+                                <p class="title">.black</p>
+                            </a>
+                        </div>
+                        <div class="tile transparent w1 h1">
+                            <a class="link" href="#">
+                                <i class="icon-windows icon-2x"></i>
+                                <p class="title">.transparent</p>
+                            </a>
+                        </div>  
+                    </div>
+
+                    <p>
+
+                    </p>
+                </div>
+            </div>
+
+            <br/><br/>
+
+            <div class="row" id='tileanimations'>
+                <div class="span6">
+                    <h2>Icon Animation Classes</h2>
+                    <ul>
+                        <li>icon-fadeoutscaleup</li>
+                        <li>icon-fadeoutscaldown</li>
+                        <li>icon-scaleuprotate360cw</li>
+                        <li>icon-scaleuprotate360ccw</li>
+                        <li>icon-scaledownrotate360cw</li>
+                        <li>icon-scaledownrotate360ccw</li>
+                        <li>icon-scaledown</li>
+                        <li>icon-scaleup</li>
+                        <li>icon-featurecw</li>
+                        <li>icon-featureccw</li>
+                        <li>icon-featurefade</li>
+                        <li>icon-flip</li>
+                        <li>icon-fadeout</li>
+                    </ul>
+                </div>
+                <div class="span6">
+                    <h2>Title Animation Classes</h2>
+                    <ul>
+                        <li>title-indent</li>
+                        <li>title-fade</li>
+                        <li>title-scaleup</li>
+                        <li>title-scaledown</li>
+                        <li>title-fadeout</li>
+                        <li>title-verticalcenter</li>
+                        <li>title-horizontalcenter</li>
+                        <li>title-center</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='span12'>
+                    <div class="tile transparent w2 h1 title-indent icon-fadeoutscaleup">
+                        <a class="link" href="#">
+                            <i class="icon-globe icon-4x"></i>
+                            <p class="title">.title-indent .icon-fadeoutscaleup</p>
+                        </a>
+                    </div>
+                    <div class="tile transparent w2 h1 title-indent icon-fadeoutscaledown">
+                        <a class="link" href="#">
+                            <i class="icon-globe icon-4x"></i>
+                            <p class="title">.title-indent .icon-fadeoutscaledown</p>
+                        </a>
+                    </div>
+                    <div class="tile transparent w2 h1 title-fade icon-scaleuprotate360cw">
+                        <a class="link" href="#">
+                            <i class="icon-laptop icon-4x"></i>
+                            <p class="title">.title-fade .icon-scaleuprotate360cw</p>
+                        </a>
+                    </div>
+                    <div class="tile transparent w2 h1 title-fade icon-scaleuprotate360ccw">
+                        <a class="link" href="#">
+                            <i class="icon-laptop icon-4x"></i>
+                            <p class="title">.title-fade .icon-scaleuprotate360ccw</p>
+                        </a>
+                    </div>
+                    <div class="tile transparent w2 h1 title-fade icon-scaledownrotate360cw">
+                        <a class="link" href="#">
+                            <i class="icon-laptop icon-4x"></i>
+                            <p class="title">.title-fade .icon-scaledownrotate360cw</p>
+                        </a>
+                    </div>
+                    <div class="tile transparent w2 h1 title-fade icon-scaledownrotate360ccw">
+                        <a class="link" href="#">
+                            <i class="icon-laptop icon-4x"></i>
+                            <p class="title">.title-fade .icon-scaledownrotate360ccw</p>
+                        </a>
+                    </div>
+                    <div class="tile transparent w2 h1 title-scaleup icon-scaledown">
+                        <a class="link" href="#">
+                            <i class="icon-th-large icon-4x"></i>
+                            <p class="title">.title-scaleup .icon-scaledown</p>
+                        </a>
+                    </div>
+                    <div class="tile transparent w2 h1 title-scaledown icon-scaleup">
+                        <a class="link" href="#">
+                            <i class="icon-th-large icon-4x"></i>
+                            <p class="title">.title-scaledown .icon-scaleup</p>
+                        </a>
+                    </div>
+                    <div class="tile transparent w2 h1 title-fadeout icon-featurecw">
+                        <a class="link" href="#">
+                            <i class="icon-windows icon-4x"></i>
+                            <p class="title">.title-fadeout .icon-featurecw</p>
+                        </a>
+                    </div>
+                    <div class="tile transparent w2 h1 title-fadeout icon-featureccw">
+                        <a class="link" href="#">
+                            <i class="icon-windows icon-4x"></i>
+                            <p class="title">.title-fadeout .icon-featureccw</p>
+                        </a>
+                    </div>
+                    <div class="tile transparent w2 h1 title-verticalcenter icon-featurefade">
+                        <a class="link" href="#">
+                            <i class="icon-css3 icon-4x"></i>
+                            <p class="title">.title-verticalcenter .icon-featurefade</p>
+                        </a>
+                    </div>
+                    <div class="tile transparent w2 h1 title-horizontalcenter icon-flip">
+                        <a class="link" href="#">
+                            <i class="icon-html5 icon-4x"></i>
+                            <p class="title">.title-horizontalcenter .icon-flip</p>
+                        </a>
+                    </div>
+                    <div class="tile transparent w2 h1 title-center icon-fadeout icon-flip">
+                        <a class="link" href="#">
+                            <i class="icon-html5 icon-4x"></i>
+                            <p class="title">.title-center .icon-fadeout .icon-flip</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <br/><br/>
+
+            <div class='row' id='imagetiles'>
+                <div class='span12'>
+                    <h2>Image Tiles</h2>
+
+                    <p>
+                        You can consider image tiles to be standard tiles with a custom background. It's that simple.
+                        You do not have limitations on the markup.
+                    </p>
+
+                </div>
+            </div>
+
+            <br/>
+
+            <div class='row'>
+                <div class='span12'>
+                    <div class="tile imagetile title-scaledown icon-fadeoutscaleup w2 h1">
+                        <a class="link" href="#">
+                            <i class="icon-picture icon-4x"></i>
+                            <img src="img/03_thumbnail.jpg"  alt="" />
+                            <p class="title">Text and Icon</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class='row'>
+                <div class='span6'>
+                    Prototype:
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;tile imagetile wX hY [title-animation icon-animation imagetile-animation]&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;a</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;link&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;#&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;i</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;icon-[..] icon-4x&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/i&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;img</span> <span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;img.jpg&quot;</span> <span style="color: #6ab825; font-weight: bold">/&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;p</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;title&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>Text and Icon<span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+                        </pre></div>
+
+                </div>
+                <div class='span6'>
+                    Example:
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;tile imagetile title-scaledown icon-fadeoutscaleup w2 h1&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;a</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;link&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;#&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;i</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;icon-picture icon-4x&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/i&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;img</span> <span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;img/03_thumbnail.jpg&quot;</span> <span style="color: #6ab825; font-weight: bold">/&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;p</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;title&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>Text and Icon<span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+                        </pre></div>
+
+                </div>
+            </div>
+
+            <br/><br/>
+
+            <div class='row' id='imagetilesanimations'>
+                <div class='span12'>
+                    <h2>Image Tile Animations</h2>
+
+                    <ul>
+                        <li>imagetile-scaleup</li>
+                        <li>imagetile-scaledown</li>
+                        <li>imagetile-rotatecw</li>
+                        <li>imagetile-rotateccw</li>
+                        <li>imagetile-overlay (requires icon)</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <br/>
+
+            <div class='row'>
+                <div class='span12'>
+                    <div class="tile imagetile imagetile-overlay icon-fadeoutscaleup w2 h1">
+                        <a class="link" href="#">
+                            <i class="icon-4x">+</i>
+                            <img src="img/01_thumbnail.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="tile imagetile imagetile-scaleup w2 h1">
+                        <a class="link" href="#">
+                            <img src="img/02_thumbnail.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="tile imagetile imagetile-scaledown w2 h1">
+                        <a class="link" href="#">
+                            <img src="img/03_thumbnail.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="tile imagetile imagetile-rotatecw w2 h1">
+                        <a class="link" href="#">
+                            <img src="img/04_thumbnail.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="tile imagetile imagetile-rotateccw w2 h1">
+                        <a class="link" href="#">
+                            <img src="img/05_thumbnail.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="tile imagetile imagetile-overlay imagetile-scaledown w2 h1">
+                        <a class="link" href="#">
+                            <i class="icon-zoom-in icon-4x"></i>
+                            <img src="img/06_thumbnail.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <br/><br/>
+
+            <div class='row' id='htmltiles'>
+                <div class='span12'>
+                    <h2>HTML Content Tiles</h2>
+
+                    <p>The HTML content tiles use malihu's scroll plugin to handle height overflow.</p>
+
+                </div>
+            </div>
+
+            <br/>
+
+            <div class='row'>
+                <div class='span12'>
+                    <div class="tile htmltile w3 h4">
+                        <div class="tilecontent">
+                            <div class="content">
+                                <h3>Lorem Ipsum</h3>
+                                <h4 class="muted">Interesting Dolor</h4>
+                                <br/>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <ul>
+                                    <li>Lorem Ipsum</li>
+                                    <li>Lorem Ipsum</li>
+                                    <li>Lorem Ipsum</li>
+                                    <li>Lorem Ipsum</li>
+                                    <li>Lorem Ipsum</li>
+                                    <li>Lorem Ipsum</li>
+                                    <li>Lorem Ipsum</li>
+                                    <li>Lorem Ipsum</li>
+                                </ul>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <ol>
+                                    <li>Lorem Ipsum</li>
+                                    <li>Lorem Ipsum</li>
+                                    <li>Lorem Ipsum</li>
+                                    <li>Lorem Ipsum</li>
+                                    <li>Lorem Ipsum</li>
+                                    <li>Lorem Ipsum</li>
+                                    <li>Lorem Ipsum</li>
+                                    <li>Lorem Ipsum</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <br/>
+
+            <div class='row'>
+                <div class='span6'>
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;tile htmltile wX hY&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;tilecontent&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;content&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+                [HTML..]
+
+            <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+                        </pre></div>
+
+                </div>
+                <div class='span6'>
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;tile htmltile w3 h4&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;tilecontent&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;content&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+                <span style="color: #6ab825; font-weight: bold">&lt;h1&gt;</span>My Metromega HTML Content<span style="color: #6ab825; font-weight: bold">&lt;/h1&gt;</span>
+
+            <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+                        </pre></div>
+
+                </div>
+            </div>
+
+            <br/><br/>
+
+            <div class='row' id='widgets'>
+                <div class='span12'>
+                    <h2>Widgets</h2>
+                    <p>Widgets are image tiles with captions looking absolutely awesome.</p>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class='row'>
+                <div class='span12'>
+                    <div class="tile red imagetile w2 h1">
+                        <div class="caption red">
+                            <a class="link" href="#">
+                                <div class="title"><i class="icon-css3 icon-2x"></i></div>
+                                <div class="caption-text twoline">
+                                    Widget Title Lorem Ipsum Dolor Sit Amet
+                                </div>
+                            </a>
+                        </div>
+                        <img src="img/02_thumbnail.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class='row'>
+                <div class='span6'>
+                    Prototype:
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;tile imagetile wX hY [color]&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;caption [color]&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;a</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;link&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;#&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;title&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;i</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;icon-[..] icon-2x&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/i&gt;&lt;/div&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;caption-text [twoline]&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                    Widget Title Lorem Ipsum Dolor Sit Amet
+                <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;/a&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;img</span> <span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;img.jpg&quot;</span> <span style="color: #6ab825; font-weight: bold">/&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+                        </pre></div>
+
+                </div>
+                <div class='span6'>
+                    Example:
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;tile imagetile w2 h1 red&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;caption red&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;a</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;link&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;#&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;title&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;i</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;icon-css3 icon-2x&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/i&gt;&lt;/div&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;caption-text twoline&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                    Widget Title Lorem Ipsum Dolor Sit Amet
+                <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;/a&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;img</span> <span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;img/02_thumbnail.jpg&quot;</span> <span style="color: #6ab825; font-weight: bold">/&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+                        </pre></div>
+
+                </div>
+            </div>
+
+            <br/><br/>
+
+            <div class='row' id='tileshow'>
+                <div class='span12'>
+                    <h2>Tileshow Exclusive Plugin</h2>
+                    <p>
+                        We like our templates to be different, that's why Tileshow is Metromega Exclusive.
+                        <br/>
+                        Tileshow has the simplest markup ever!
+                    </p>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class='row'>
+                <div class='span12'>
+                    <div class="tile imagetile tileshow w2 h1">
+                        <div class="slide active">
+                            <img src="img/01_thumbnail.jpg" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="img/02_thumbnail.jpg" alt=""/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/03_thumbnail.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class='row'>
+                <div class='span6'>
+                    HTML Markup
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;tile imagetile tileshow wX hY&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;slide active&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt; html</span> <span style="color: #bbbbbb">content</span> <span style="color: #6ab825; font-weight: bold">/&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;img</span> <span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;img-1.jpg&quot;</span> <span style="color: #6ab825; font-weight: bold">/&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;slide&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt; html</span> <span style="color: #bbbbbb">content</span> <span style="color: #6ab825; font-weight: bold">/&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;img</span> <span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;img-2.jpg&quot;</span> <span style="color: #6ab825; font-weight: bold">/&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;slide&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt; html</span> <span style="color: #bbbbbb">content</span> <span style="color: #6ab825; font-weight: bold">/&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;img</span> <span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;img-3.jpg&quot;</span> <span style="color: #6ab825; font-weight: bold">/&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+                        </pre></div>
+
+                </div>
+                <div class='span6'>
+                    Javascript Markup:
+
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #d0d0d0">$(</span><span style="color: #ed9d13">&#39;.tileshow&#39;</span><span style="color: #d0d0d0">).tileshow({</span>
+        <span style="color: #d0d0d0">speed:</span> <span style="color: #d0d0d0">interger,</span> <span style="color: #999999; font-style: italic">//fade speed</span>
+        <span style="color: #d0d0d0">timeout:</span> <span style="color: #d0d0d0">interger,</span> <span style="color: #999999; font-style: italic">//tile display time</span>
+        <span style="color: #d0d0d0">autoplay:</span> <span style="color: #6ab825; font-weight: bold">boolean</span><span style="color: #d0d0d0">,</span> <span style="color: #999999; font-style: italic">//autoplay feature</span>
+        <span style="color: #d0d0d0">mousewheel:</span> <span style="color: #6ab825; font-weight: bold">boolean</span> <span style="color: #999999; font-style: italic">//mousewheel navigation</span>
+    <span style="color: #d0d0d0">});</span>
+                        </pre></div>
+
+
+
+                </div>
+            </div>
+
+            <br/>
+
+            <div class='row' id='gmapsintegration'>
+                <div class='span12'>
+                    <h2>Google Maps Integration</h2>
+                    <p>In order to use Google Maps, we need to include some scripts first.</p>
+                    <p>You can set the location in the <span class='label label-info'>gmap.js</span> file</p>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class='row'>
+                <div class='span12'>
+                    <div class="tile white map w3 h2">
+                        <div id="gmap" style="width:100%; height:100%; min-height:600px;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class='row'>
+                <div class='span12'>
+
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;http://maps.google.com/maps/api/js?sensor=true&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/jquery.gmaps.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/gmap.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+                        </pre></div>
+
+
+                </div>
+            </div>
+
+            <br/>
+
+            <div class='row'>
+                <div class='span12'>
+                    HTML Markup:
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;tile white map wX hY&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">id=</span><span style="color: #ed9d13">&quot;gmap&quot;</span> <span style="color: #bbbbbb">style=</span><span style="color: #ed9d13">&quot;width:100%; height:100%; min-height:600px;&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/div&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+                        </pre></div>
+
+                </div>
+            </div>
+
+            <br/><br/>
+
+            <div class='row' id='revealtiles'>
+                <div class='span12'>
+                    <h2>Reveal Tile</h2>                 
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='span6'>
+                    <div class="tile reveal-slide red title-indent icon-flip w2 h1">
+                        <div class="reveal white w2 h1">
+                            <div class="text">
+                                <p>
+                                    <span class="text-medium">Slide Reveal</span><br/>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                </p>
+                            </div>
+                        </div>
+                        <a class="link" href="#">
+                            <i class="icon-windows icon-4x"></i>
+                            <p class="title">Reveal Tile</p>
+                        </a>
+                    </div>
+                </div>
+                <div class='span6'>
+                    <div class="tile reveal-fade red title-indent icon-flip w2 h1">
+                        <div class="reveal white w2 h1">
+                            <div class="text">
+                                <p>
+                                    <span class="text-medium">Fade Reveal</span><br/>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                </p>
+                            </div>
+                        </div>
+                        <a class="link" href="#">
+                            <i class="icon-windows icon-4x"></i>
+                            <p class="title">Reveal Tile</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class='row'>
+                <div class='span6'>
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;tile reveal-slide wX hY [color title-animation icon-animation]&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;reveal [color] wX hY&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;text&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;p&gt;</span>
+                    <span style="color: #6ab825; font-weight: bold">&lt;span</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;text-medium&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>Slide Reveal<span style="color: #6ab825; font-weight: bold">&lt;/span&gt;&lt;br/&gt;</span>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                <span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;a</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;link&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;#&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;i</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;icon-[..] icon-4x&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/i&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;p</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;title&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>Reveal Tile<span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+                        </pre></div>
+
+                </div>
+                <div class='span6'>
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;tile reveal-fade wX hY [color title-animation icon-animation]&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;reveal [color] wX hY&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;text&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;p&gt;</span>
+                    <span style="color: #6ab825; font-weight: bold">&lt;span</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;text-medium&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>Slide Reveal<span style="color: #6ab825; font-weight: bold">&lt;/span&gt;&lt;br/&gt;</span>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                <span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;a</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;link&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;#&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;i</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;icon-[..] icon-4x&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/i&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;p</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;title&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>Reveal Tile<span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+                        </pre></div>
+                </div>
+            </div>
+
+            <br/><br/>
+
+            <div class='row' id='mlightbox'>
+                <div class='span12'>
+                    <h2>Metromega Lightbox</h2>
+                    <p>
+                        Our exclusive custom lightbox plugin will do anything for you. 
+                        Besides looking awesome, it works extremely well on mobile devices, being responsive.
+                    </p>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class='row'>
+                <div class='span12'>
+                    <h3>Images</h3>
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;tile wX hY [color title-animation icon-animation]&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;a</span>  <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;#galleryimage&quot;</span> <span style="color: #bbbbbb">data-lightbox=</span><span style="color: #ed9d13">&quot;mlightboximage&quot;</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;link&quot;</span> 
+            <span style="color: #bbbbbb">data-src=</span><span style="color: #ed9d13">&quot;img.jpg&quot;</span> <span style="color: #bbbbbb">data-title=</span><span style="color: #ed9d13">&quot;Title&quot;</span> <span style="color: #bbbbbb">data-description=</span><span style="color: #ed9d13">&quot;Description&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;i</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;icon-[...] icon-4x&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/i&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;p</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;title&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>Image<span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+                        </pre></div>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class='row'>
+                <div class='span12'>
+                    <h3>Videos</h3>
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;tile wX hY [color icon-animation title-animation]&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;a</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;#galleryvideo&quot;</span> <span style="color: #bbbbbb">data-lightbox=</span><span style="color: #ed9d13">&quot;mlightboxvideo&quot;</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;link&quot;</span> 
+           <span style="color: #bbbbbb">data-src=</span><span style="color: #ed9d13">&quot;http://embeddedlink&quot;</span> <span style="color: #bbbbbb">data-title=</span><span style="color: #ed9d13">&quot;Title&quot;</span> <span style="color: #bbbbbb">data-description=</span><span style="color: #ed9d13">&quot;Description&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;i</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;icon-[..] icon-4x&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/i&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;p</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;title&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>Video<span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+                        </pre></div>
+                </div>
+            </div>
+
+            <br/>
+            <br/>
+
+            <div class='row'>
+                <div class='span12'>
+                    <p>
+                        Blog post files are located in the <span class='label label-info'>blog</span> folder.
+                        We're going to review the blog post markup here.
+                    </p>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class='row'>
+                <div class='span12'>
+
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #6ab825; font-weight: bold">&lt;body</span> <span style="color: #bbbbbb">id=</span><span style="color: #ed9d13">&quot;blog&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+        <span style="color: #6ab825; font-weight: bold">&lt;section</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;blogpost&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;section</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;blogpost-content&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+                <span style="color: #6ab825; font-weight: bold">&lt;fluid bootstrap</span> <span style="color: #bbbbbb">or</span> <span style="color: #bbbbbb">simple</span> <span style="color: #bbbbbb">html</span> <span style="color: #bbbbbb">markup</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+            <span style="color: #6ab825; font-weight: bold">&lt;/section&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;section</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;blogpost-details&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mlightbox-description&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                    <span style="color: #6ab825; font-weight: bold">&lt;h2</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&#39;mlightbox-title&#39;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>Your Blog Post Title<span style="color: #6ab825; font-weight: bold">&lt;/h2&gt;</span>
+                    <span style="color: #6ab825; font-weight: bold">&lt;p</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mlightbox-subtitle muted&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>Your Blog Post Subtitle<span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;ul</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mlist&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                    <span style="color: #6ab825; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;../index.html&quot;</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;close-mlightbox&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;i</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;icon-arrow-left&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/i&gt;</span> Back to Metromega<span style="color: #6ab825; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span style="color: #6ab825; font-weight: bold">&lt;li&gt;&lt;/li&gt;</span>
+                    <span style="color: #6ab825; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;#&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;i</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;icon-star&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/i&gt;</span> Custom Link<span style="color: #6ab825; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span style="color: #6ab825; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;#&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;i</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;icon-star&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/i&gt;</span> Custom Link<span style="color: #6ab825; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span style="color: #6ab825; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;#&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;i</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;icon-star&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/i&gt;</span> Custom Link<span style="color: #6ab825; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;/ul&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;/section&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/section&gt;</span>
+
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;../js/jquery-1.7.1.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;../js/respond.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;../js/jquery.isotope.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;../js/jquery.mousewheel.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;../js/jquery.mCustomScrollbar.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;../js/tileshow.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;../js/mlightbox.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;../js/jquery.fitVids.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;../js/bootstrap.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;../js/singlepost.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;../js/script.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+
+    <span style="color: #6ab825; font-weight: bold">&lt;/body&gt;</span>
+                        </pre></div>
+
+
+                </div>
+            </div>
+
+            <br/>
+
+            <div class='row'>
+                <div class='span12'>
+                    Example Bootstrap Blog Post Content:
+                    <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #6ab825; font-weight: bold">&lt;section</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;blogpost-content&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;container-fluid&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #999999; font-style: italic">&lt;!-- Main hero unit for a primary marketing message or call to action --&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;row-fluid&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;hero-unit&quot;</span> <span style="color: #bbbbbb">style=</span><span style="color: #ed9d13">&quot;background: url(&#39;../img/background4.jpg&#39;) no-repeat center; color:#fff;&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                    <span style="color: #6ab825; font-weight: bold">&lt;h1&gt;</span>Hello, Metromega lovers!<span style="color: #6ab825; font-weight: bold">&lt;/h1&gt;</span>
+                    <span style="color: #6ab825; font-weight: bold">&lt;p&gt;</span>This is a template for a simple marketing or informational website. 
+                        It includes a large callout called the hero unit and three supporting 
+                        pieces of content. Use it as a starting point to create something more 
+                        unique.<span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+                    <span style="color: #6ab825; font-weight: bold">&lt;p&gt;&lt;a</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;#&quot;</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;btn btn-primary btn-large&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>Learn more <span style="color: #d0d0d0">&amp;raquo;</span><span style="color: #6ab825; font-weight: bold">&lt;/a&gt;&lt;/p&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+
+            <span style="color: #999999; font-style: italic">&lt;!-- Example row of columns --&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;row-fluid&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;span4&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                    <span style="color: #6ab825; font-weight: bold">&lt;h2&gt;</span>Heading<span style="color: #6ab825; font-weight: bold">&lt;/h2&gt;</span>
+                    <span style="color: #6ab825; font-weight: bold">&lt;p&gt;</span>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. <span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;span4&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                    <span style="color: #6ab825; font-weight: bold">&lt;h2&gt;</span>Heading<span style="color: #6ab825; font-weight: bold">&lt;/h2&gt;</span>
+                    <span style="color: #6ab825; font-weight: bold">&lt;p&gt;</span>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. <span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;span4&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                    <span style="color: #6ab825; font-weight: bold">&lt;h2&gt;</span>Heading<span style="color: #6ab825; font-weight: bold">&lt;/h2&gt;</span>
+                    <span style="color: #6ab825; font-weight: bold">&lt;p&gt;</span>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.<span style="color: #6ab825; font-weight: bold">&lt;/p&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+
+        <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+
+    <span style="color: #6ab825; font-weight: bold">&lt;/section&gt;</span>
+                        </pre></div>
+
+                </div>
+            </div>
+
+            <br/>
+
+            <div class='row'>
+                <div class='span12'>
+                    <h2>Bootstrap Integration</h2>
+                    <p>
+                        Because we know you like using the things you're used to, we've integrated Bootstrap as part of our
+                        HTML tiles and blog posts. You won't have to worry about your design not being responsive.
+                    </p>
+                </div>
+            </div>
+
+            <br/><br/>
+
+            <div class="row">
+                <div class="span12" id='contactform'>
+                    <h1>Contact Form</h1>
+                    <hr/>
+                    <p>
+                        Luckily for you, Metromega comes with a perfectly working Contact form.
+                    </p>
+                    <p>
+                        Here's what you need to do to make it yours:
+                    </p>
+
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="row">
+                <div class="span12">
+                    <ol>
+                        <li>
+                            Open <span class='label label-info'>mail.php</span><br/><br/>
+                        </li>
+                        <li>
+                            Change your email hostname here:
+                            <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #d0d0d0">    //Set the hostname of the mail server</span>
+<span style="color: #d0d0d0">    $mail-&gt;Host       = &quot;mail.yourcompany.com&quot;;</span>
+                                </pre></div><br/>
+                        </li>
+                        <li>
+                            Set your login Username and Password here:
+                            <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #d0d0d0">    //Username to use for SMTP authentication</span>
+<span style="color: #d0d0d0">    $mail-&gt;Username   = &quot;you@yourcompany.com&quot;;</span>
+<span style="color: #d0d0d0">    //Password to use for SMTP authentication</span>
+<span style="color: #d0d0d0">    $mail-&gt;Password   = &quot;password123&quot;;</span>
+                                </pre></div><br/>
+                        </li>
+                        <li>
+                            Set the email address where you want to receive the Emails:
+                            <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #d0d0d0">    //Set who the message is to be sent to</span>
+<span style="color: #d0d0d0">    $mail-&gt;AddAddress(&#39;you@yourcompany.com&#39;, &#39;Firstname Lastname&#39;);</span>
+                                </pre></div><br/>
+                        </li>
+                        <li>
+                            Enjoy your working Contact Form!
+                        </li>
+                    </ol>
+                    <br/><br/>
+                    <p>
+                        If you want to learn more about phpMailer, visit <a href='https://github.com/PHPMailer/PHPMailer' target='_blank'>https://github.com/PHPMailer/PHPMailer</a> for a complete documentation.
+
+                    </p>
+                </div>
+            </div>
+
+            <br/><br/>
+
+            <div class="row" id='sourcesandcredits'>
+                <div class="span12">
+                    <h1>Sources and Credits</h1>
+                    <hr/>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="row">
+                <div class="span12">
+                    <ul>
+                        <li>jQuery 1.7.1 <a href='http://jquery.com/' target='_blank'>http://jquery.com/</a></li>
+                        <li>Metafizzy Isotope <a href='http://isotope.metafizzy.co/' target='_blank'>http://isotope.metafizzy.co/</a></li>
+                        <li>jQuery Mousewheel <a href='https://github.com/brandonaaron/jquery-mousewheel' target='_blank'>https://github.com/brandonaaron/jquery-mousewheel</a></li>
+                        <li>jQuery Timer <a href='http://jchavannes.com/jquery-timer/demo' target='_blank'>http://jchavannes.com/jquery-timer/demo</a></li>
+                        <li>malihu Scrollbar <a href='http://manos.malihu.gr/jquery-custom-content-scroller/' target='_blank'>http://manos.malihu.gr/jquery-custom-content-scroller/</a></li>
+                        <li>jQuery fitVids <a href='http://fitvidsjs.com/' target='_blank'>http://fitvidsjs.com/</a></li>
+                        <li>Twitter Bootstrap <a href='http://getbootstrap.com/2.3.2/' target='_blank'>http://getbootstrap.com/2.3.2/</a></li>
+                        <li>jQuery gMaps <a href='http://hpneo.github.io/gmaps/' target='_blank'>http://hpneo.github.io/gmaps/</a></li>
+                        <li>Respond <a href='https://github.com/scottjehl/Respond' target='_blank'>https://github.com/scottjehl/Respond</a></li>
+                        <li>phpMailer <a href='https://github.com/PHPMailer/PHPMailer' target='_blank'>https://github.com/PHPMailer/PHPMailer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <br/><br/>
+
+            <div class="row" id='end'>
+                <div class="span12">
+                    <h1>End Of Documentation</h1>
+                    <hr/>
+                    <p>Once again, thank you very much for purchasing Metromega. You're 200% Awesome now!</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> <!-- jQuery Library -->
+        <script src="js/respond.min.js" type="text/javascript"></script> <!-- Responsive Library -->
+        <script src="js/jquery.isotope.min.js" type="text/javascript"></script> <!-- Isotope Layout Plugin -->
+        <script src="js/jquery.mousewheel.js" type="text/javascript"></script> <!-- jQuery Mousewheel -->
+        <script src="js/jquery.mCustomScrollbar.js" type="text/javascript"></script> <!-- malihu Scrollbar -->
+        <script src="js/tileshow.js" type="text/javascript"></script> <!-- Metromega Custom Tileshow Plugin -->
+        <script src="js/mlightbox.js" type="text/javascript"></script> <!-- Metromega Custom Lightbox Plugin -->
+        <script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
+        <script src="js/jquery.gmaps.js" type="text/javascript"></script>
+        <script src="js/gmap.js" type="text/javascript"></script>
+        <script src="js/jquery.fitVids.js" type="text/javascript"></script> <!-- jQuery fitVids Plugin -->
+        <script src="js/lockscreen.js" type="text/javascript"></script> <!-- Metromega Lockscreen -->
+        <script src="js/bootstrap.min.js" type="text/javascript"></script> <!-- Bootstrap Library -->
+        <script src="js/script.js" type="text/javascript"></script> <!-- Metromega Script -->
+
+        <script>
+            $(document).ready(function() {
+
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() > 100)
+                        $('#totop').fadeIn(500);
+                    else
+                        $('#totop').fadeOut(500);
+                })
+
+                $('#totop').click(function() {
+                    $("html, body").animate({scrollTop: "0px"});
+                });
+
+                $('#table li a').click(function(e) {
+                    var href = $(this).attr('href');
+                    $('html, body').animate({scrollTop: $(href).position().top}, 'slow');
+                    e.preventDefault();
+                });
+            });
+        </script>
+    </body>
+</html>
